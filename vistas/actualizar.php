@@ -28,7 +28,7 @@
                             </select>
                             <br>
                             <label for="" class="text">Bandera</label>
-                            <input type="text" name="url" id="url" class="form-control" placeholder="Vuelve a ingresar el URL de la imagen">
+                            <input type="text" name="url" id="url" class="form-control" value="<?php echo $item['bandera']?>">
                             <br>
                             <button class="btn btn-success"><i class="fa-solid fa-flag"></i>Actualizar</button>
                         </form>
