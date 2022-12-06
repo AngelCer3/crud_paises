@@ -3,9 +3,14 @@
     include "../backend/conexion.php";
     
     $conexion = conexion();
-
-    $continente = $_GET['continente'];
-    $sql = "SELECT * FROM t_paises Where continente ='$continente'";
+    $continente = "";
+    if(isset($_GET['continente'])){
+        $continente = $_GET['continente'];
+        $sql = "SELECT * FROM t_paises Where continente ='$continente'";
+    } else {
+        $sql = "SELECT * FROM t_paises";
+    }
+    
     $respuesta = mysqli_query($conexion,$sql);
 ?>
 
