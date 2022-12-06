@@ -8,7 +8,7 @@
     $resultado = mysqli_query($conexion,$sql);
 
     if($resultado){
-        header('location:../vistas/index.php');
+        header('location:../vistas/banderas.php');
     }else{
         echo "No se pudo insertar";
     }
