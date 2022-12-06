@@ -743,5 +743,6 @@
                 </g>
             </g>
         </svg>
-    </div>
+		<a class="btn btn-success" href="../vistas/mostrar.php" role="button">Mostrar Paises</a>
+	</div>
 <?php include "../vistas/footer.php"; ?>
